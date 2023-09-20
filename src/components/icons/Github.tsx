@@ -1,9 +1,9 @@
+
 import { BsGithub } from 'react-icons/bs';
-1
 
 export function GitHubIcon(){
   return(
-    <BsGithub className="socialIcon"/>
+    <BsGithub className="bg-transparent dark:bg-transparent socialIcon"/>
   )
 }
 

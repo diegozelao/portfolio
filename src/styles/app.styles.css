@@ -52,3 +52,34 @@
   @apply box-border shadow-md shadow-slate-800 hover:shadow-slate-950;
   @apply dark:shadow-zinc-300 hover:dark:shadow-zinc-50 hover:ring-2;
 }
+
+.btnRepo {
+  @apply invisible;
+}
+@media (min-width: 1180px) {
+/* @media screen(xl) { */
+  .btnRepo {
+    @apply visible;
+    @apply w-32 h-10 2xl:w-40 2xl:h-12;
+    @apply cursor-pointer;
+    @apply bottom-5 right-5 md:absolute;
+    @apply flex items-center justify-center text-center;
+    
+    /* @apply text-black dark:text-white; */
+    /* @apply bg-zinc-700 dark:bg-zinc-200; */
+
+    /* color: white !important; */
+
+  }
+  .btnRepo a {
+    @apply py-1 rounded-3xl;
+    @apply ring-2 ring-purple-700;
+
+  }
+  .btnRepo :hover {
+    @apply box-border shadow-lg shadow-purple-800 hover:shadow-purple-950;
+    @apply dark:shadow-purple-700 hover:dark:shadow-purple-500;
+  }
+  
+  
+}
