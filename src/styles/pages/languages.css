@@ -1,0 +1,54 @@
+
+
+.language {
+  @apply order-3 w-full;
+  @apply flex flex-col justify-center pt-3 text-center;
+}
+
+.divInfoLanguage {
+  @apply flex flex-1 w-[full];
+  @apply flex-col;
+  @apply px-4 md:px-8 2xl:px-12;
+}
+.divInfoLanguage .flag {
+  @apply flex flex-row;
+  @apply items-center justify-start gap-6;
+
+  @apply py-2 text-xl;
+  /* 🇺🇸 */
+
+  /* md */
+  @apply md:text-3xl md:gap-3 2xl:gap-6;
+
+}
+
+.divInfoLanguage .academic {
+  @apply flex flex-row;
+  @apply items-center justify-start gap-2;
+  @apply py-2 text-xl;
+}
+
+@media screen(md) {
+  
+  .language {
+    @apply col-span-1 min-h-[50vh] order-3;
+  }
+  
+}
+
+
+@media screen(xl) {
+  .divInfoLanguage h1 {
+    @apply text-4xl
+  }
+}
+
+@media screen(2xl) {
+  .divInfoLanguage h1 {
+    @apply text-5xl
+  }
+  .divInfoLanguage h2 {
+    @apply text-4xl
+  }
+}
+

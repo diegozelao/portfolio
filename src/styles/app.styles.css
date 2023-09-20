@@ -1,0 +1,54 @@
+
+.classApp {
+  @apply flex items-center justify-center ;
+  @apply grid w-full h-screen grid-cols-1 place-items-start;
+
+}
+
+
+@media screen(md) {
+  
+  .classApp {
+    @apply grid-cols-3;
+  }
+  
+}
+
+/* @media screen(lg) {
+
+  
+} */
+ 
+.socialIcon {
+  @apply w-6 h-6;
+  @apply cursor-pointer;
+  @apply text-zinc-800;
+
+  /* dark */
+  @apply dark:text-zinc-100;
+}
+
+.skillsIcon {
+  @apply w-10 h-10;
+  @apply cursor-pointer;
+  @apply text-zinc-800;
+
+  /* dark */
+  @apply dark:text-zinc-100;
+}
+
+  
+.divThemeChange {
+  @apply w-5;
+  @apply absolute top-0 m-3 right-5;
+  @apply md:left-2;
+}
+
+.btnThemeChange {
+  @apply w-[2.25rem] h-[2.25rem];
+  @apply 2xl:w-[3.5rem] 2xl:h-[3.5rem];
+  @apply cursor-pointer;
+  @apply rounded-full border-zinc-700 ring-1 ring-zinc-700;
+  @apply box-border shadow-md shadow-slate-800 hover:shadow-slate-950;
+  @apply dark:shadow-zinc-300 hover:dark:shadow-zinc-50 hover:ring-2;
+}

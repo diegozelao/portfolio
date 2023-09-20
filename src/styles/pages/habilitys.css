@@ -1,0 +1,25 @@
+
+.habilitys {
+  @apply order-4 w-full;
+  @apply grid grid-rows-1;
+
+
+  /* tests */
+  /* @apply border dark:border-zinc-50 border-zinc-900; */
+}
+
+
+@media screen(md) {
+  .habilitys {
+    @apply col-span-2 min-h-[50vh]  order-1;
+    @apply grid grid-cols-2;
+  }
+}
+@media screen(xl) {
+  .habilitys {
+    /* @apply col-span-2 min-h-[50vh]  order-4; */
+
+
+    /* test */
+  }
+}

@@ -1,0 +1,113 @@
+
+.profile {
+  @apply w-full md:z-10;
+  @apply flex flex-col items-center;
+  /* analisar */
+  @apply justify-center;
+  @apply order-first;
+
+
+  /* dark mode */
+  /* @apply dark:border-zinc-50 border-zinc-900;
+  @apply dark:text-white; */
+  
+  
+  
+  /* tests | comments after */
+  /* @apply md:col-span-1 */
+  /* @apply border; */
+}
+
+.divImgProfile {
+  @apply flex justify-center w-60 md:w-full h-60;
+}
+.imgProfile {
+  @apply min-w-[75%];
+  @apply min-h-[100%];
+  @apply border rounded-full;
+  @apply border-purple-700 ring-1 ring-purple-700
+
+  /* dark mode */
+}
+
+/* sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } */
+
+@media screen(sm) {
+  .imgProfile {
+    /* @apply min-w-[70%]  min-h-[100%]; */
+  }
+}
+@media screen(md) {
+  .profile {
+    @apply min-h-[50vh];
+    @apply order-2 col-span-1;
+  }
+  .divImgProfile {
+    @apply flex w-[14rem] min-h-[25vh];
+    @apply justify-center;
+  }
+  .imgProfile {
+    @apply min-h-[100%];
+    @apply border rounded-lg;
+    @apply border-purple-700 ring-1 ring-purple-700;
+  }
+}
+
+@media screen(lg) {
+  .divImgProfile {
+    @apply flex w-[14rem] min-h-[25vh];
+  }
+}
+@media screen(xl) {
+
+  .divImgProfile {
+    /* @apply flex w-[14rem] min-h-[25vh]; */
+    /* @apply hover:bg-yellow-400; */
+  }
+  
+  .imgProfile {
+    /* @apply min-w-[20rem]  min-h-[100%]; */
+    
+    /* tests */
+  }
+}
+@media screen(2xl) {
+
+  .divImgProfile {
+    @apply flex w-[25rem] min-h-[30vh];
+    /* @apply hover:bg-yellow-400; */
+  }
+  .imgProfile {
+    /* @apply min-w-[20rem]  min-h-[100%]; */
+    
+    /* tests */
+  }
+}
+
+
+@media (max-width: 320px) {
+  .profile {
+    @apply w-full min-h-[85vh];
+  }
+  
+}
+
+.textProfile {
+  @apply min-h-[5vh];
+  @apply flex items-center justify-center;
+  @apply py-2 mt-4 md:mt-0;
+}
+
+.divIcon {
+  @apply xl:min-w-[20rem] md:min-w-[90%] min-w-[300px] min-h-[3vh];
+  @apply flex items-center justify-center;
+  
+  @apply py-2 border rounded-lg;
+  @apply border-purple-700 ring-1 ring-purple-700;
+
+  @apply gap-8 mt-7 md:mt-4;
+}

@@ -1,0 +1,101 @@
+.experience {
+  @apply order-2 w-full;
+  @apply grid grid-rows-1;
+  /* tests */
+  /* @apply z-50; */
+  /* @apply border dark:border-zinc-50 border-zinc-900; */
+}
+
+.experience .basicExp {
+  @apply flex flex-col w-full px-10;
+  @apply items-center justify-center gap-4;
+}
+
+.experience .basicTimeExp {
+  @apply flex flex-col w-full;
+  @apply justify-center gap-4 py-8 md:py-0;
+}
+
+
+
+
+@media screen(md) {
+  .experience {
+    @apply col-span-2 min-h-[50vh] order-4;
+    @apply grid grid-cols-2;
+  }
+  
+  .experience .basicExp {
+    @apply items-center justify-start gap-4;
+
+  }
+  .experience .basicTimeExp {
+
+  }
+
+}
+@media screen(xl) {
+  .experience {
+    /* @apply col-span-2 min-h-[50vh]  order-4; */
+
+
+    /* test */
+  }
+  
+  .experience .basicExp { 
+    @apply mt-8;
+  }
+}
+
+
+
+
+
+
+.experience-language {
+  @apply flex;
+  @apply items-center justify-center gap-3;
+}
+
+.experience-unit {
+  @apply flex w-[75%] h-[30px];
+  @apply items-center justify-start;
+  @apply border rounded-2xl;
+
+  /* testes */
+  @apply border-purple-700 ring-1;
+  @apply bg-zinc-600 dark:bg-zinc-400;
+  @apply hover:ring-2 hover:shadow-lg hover:drop-shadow-md;
+  @apply hover:shadow-zinc-600 hover:dark:shadow-zinc-300;
+}
+
+.experience-measure {
+  @apply flex items-center justify-center;
+  @apply h-[30px]; 
+  /* @apply border border-[linear-gradient(90deg,#777CF4_2.62%,#F47777_93.38%)]; */
+  @apply text-base font-light text-center border-solid rounded-3xl;
+  background: linear-gradient(90deg, #777cf4 2.62%, #f47777 93.38%);
+}
+
+.experience-measure span {
+  @apply bg-transparent;
+}
+
+.experience-measure.measure-1 {
+  width: 30%;
+}
+.experience-measure.measure-2 {
+  width: 44%;
+}
+.experience-measure.measure-3 {
+  width: 58%;
+}
+.experience-measure.measure-4 {
+  width: 72%;
+}
+.experience-measure.measure-5 {
+  width: 86%;
+}
+.experience-measure.measure-6 {
+  width: 100%;
+}
